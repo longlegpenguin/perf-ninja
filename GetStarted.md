@@ -27,8 +27,8 @@ cmake -E make_directory build
 cd build
 cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build . --config Release --parallel 8
-cmake --build . --config=Release --target validateLab
-cmake --build . --config=Release --target benchmarkLab
+cmake --build . --target validateLab
+cmake --build . --target benchmarkLab
 ```
 When you push changes to your private branch, it will automatically trigger CI benchmarking job. More details about it at the bottom of the page.
 
@@ -64,7 +64,7 @@ You are free to work on whatever platform you have at your disposal. However, we
 * Mac mini (M1, 2020) @ 3.20GHz max frequency, 4P+4E cores, 8 MB LLC
 * 16 GB RAM, LPDDR4
 * 256GB NVME APPLE SSD AP0256Q
-* macOS 12.5.1 Monterey (21G83), Darwin 21.6.0
+* macOS 13.5.1 Ventura (22G90)
 * Clang C++ compiler, version 15.0
 
 **Machine 3 - (Windows + Zen3)**
