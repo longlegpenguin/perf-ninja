@@ -51,7 +51,9 @@ endif()
 set(CMAKE_CXX_FLAGS "${CMAKE_C_FLAGS} ${CMAKE_CXX_FLAGS}")
 
 # https://github.com/google/benchmark
-find_package(benchmark PATHS "${CMAKE_CURRENT_LIST_DIR}/benchmark/build" REQUIRED)
+message(STATUS "This is a message ${CMAKE_CURRENT_LIST_DIR}.")
+
+find_package(benchmark PATHS "${CMAKE_CURRENT_LIST_DIR}/../benchmark/build" REQUIRED)
 set(BENCHMARK_LIBRARY "benchmark::benchmark")
 
 # Find source files
